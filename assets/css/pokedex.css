@@ -8,74 +8,129 @@
 
 .normal {
     background-color: #a6a877;
+    color: #000;
 }
 
 .grass {
-    background-color: #77c850;
+    background-color: #46D1B2;
+    color: #000;
 }
 
 .fire {
-    background-color: #ee7f30;
+    background-color: #FB6C6C;
+    color: #000;
 }
 
 .water {
     background-color: #678fee;
+    color: #000;
 }
 
 .electric {
     background-color: #f7cf2e;
+    color: #000;
 }
 
 .ice {
     background-color: #98d5d7;
+    color: #000;
 }
 
 .ground {
     background-color: #dfbf69;
+    color: #000;
 }
 
 .flying {
     background-color: #a98ff0;
+    color: #000;
 }
 
 .poison {
     background-color: #a040a0;
+    color: #fff;
 }
 
 .fighting {
     background-color: #bf3029;
+    color: #fff;
 }
 
 .psychic {
     background-color: #f65687;
+    color: #000;
 }
 
 .dark {
     background-color: #725847;
+    color: #fff;
 }
 
 .rock {
     background-color: #b8a137;
+    color: #000;
 }
 
 .bug {
     background-color: #a8b720;
+    color: #000;
 }
 
 .ghost {
     background-color: #6e5896;
+    color: #fff;
 }
 
 .steel {
     background-color: #b9b7cf;
+    color: #000;
 }
 
 .dragon {
     background-color: #6f38f6;
+    color: #fff;
 }
 
 .fairy {
     background-color: #f9aec7;
+    color: #000;
+}
+
+progress{
+    height: 25px;
+    padding: 5px;
+    background-color: transparent;
+    display: flex;
+  }
+  
+progress::-webkit-progress-bar {
+    background: rgb(155, 155, 155);
+    border-radius: 50px;
+    padding: 2px;
+}
+progress::-moz-progress-bar {  
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 2px;
+}
+
+progress::-webkit-progress-value {
+    border-radius: 50px;
+    background:rgb(252, 164, 0);
+}
+ 
+
+
+
+
+  
+h1{
+    text-align: center;
+    background-color: #6f38f6;
+}
+
+table.stats{
+
 }
 
 .pokemon {
@@ -84,6 +139,14 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+}
+
+#ajuste{
+    
+    margin: 8rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    
 }
 
 .pokemon .number {
@@ -95,8 +158,8 @@
 
 .pokemon .name {
     text-transform: capitalize;
-    color: #fff;
     margin-bottom: .25rem;
+    margin-top: -10px;
 }
 
 .pokemon .detail {
@@ -112,14 +175,27 @@
     list-style: none;
 }
 
+.detalhes {
+    
+
+    text-align: center;
+    padding: 1rem;
+    margin:  auto;
+    list-style: none;
+    background-color: #cfefef;
+    color: #000;
+    border-radius: 1rem;
+}
+
 .pokemon .detail .types .type {
-    color: #fff;
-    padding: .25rem .5rem;
+    padding: .2rem .5rem;
     margin: .25rem 0;
-    font-size: .625rem;
+    font-size: .8rem;
     border-radius: 1rem;
     filter: brightness(1.1);
     text-align: center;
+    color: white;
+    text-transform: capitalize;
 }
 
 .pokemon .detail img {
@@ -137,29 +213,75 @@
 }
 
 .pagination button {
-    padding: .25rem .5rem;
+    
+    padding: .25rem 1rem;
     margin: .25rem 0;
-    font-size: .625rem;
-    color: #fff;
-    background-color: #6c79db;
-    border: none;
+    font-size: .70rem;
+    color: #5c5a5a;
+    background-color: #e8eb3c;
+    border-color: #3c236c ;
+    
     border-radius: 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    
 }
+
+.datespoke {
+    text-align: center;
+    background-color: white;
+    color: #747474;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem -1rem -1.20rem ;
+}
+
+img.poke{
+    margin: auto;
+    margin-right: 45%;
+    height: 100px;
+}
+img.fundo{
+    background-image: url(109332.jpg);
+    position: fixed;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+
+}
+img.pokemon-img{
+    
+    display: flex;
+    margin: auto;
+    height: 100px;
+    
+}
+table.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+
 
 @media screen and (min-width: 380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
+        
     }
 }
 
 @media screen and (min-width: 576px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr;
+        
     }
 }
 
 @media screen and (min-width: 992px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        
     }
 }
